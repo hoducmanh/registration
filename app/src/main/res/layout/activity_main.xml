@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Employee Registration Form"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:background="#ACA1A1"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Họ và tên:"
+            android:textSize="20sp"
+            android:layout_marginStart="5dp"/>
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:textSize="20sp"
+            android:background="#5676"
+            android:hint="Nhập họ và tên"
+            android:layout_marginStart="3dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/userAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#B71C1C"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MSSV:"
+            android:textSize="20sp"
+            android:layout_marginStart="5dp" />
+        <EditText
+            android:id="@+id/userMssv"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:textSize="20sp"
+            android:background="#5676"
+            android:hint="Nhập MSSV"
+            android:layout_marginStart="33dp"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số CCCD:"
+            android:textSize="20sp"
+            android:layout_marginStart="4dp" />
+
+        <EditText
+            android:id="@+id/userCccd"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="7.5dp"
+            android:background="#5676"
+            android:hint="Nhập số CCCD"
+            android:inputType="number"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+\
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số ĐT:"
+            android:textSize="20sp"
+            android:layout_marginStart="4dp" />
+
+        <EditText
+            android:id="@+id/userPhoneNum"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="35dp"
+            android:background="#5676"
+            android:hint="Nhập số ĐT"
+            android:inputType="number"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quê quán:"
+            android:textSize="20sp"
+            android:layout_marginStart="1dp" />
+
+        <EditText
+            android:id="@+id/userHomeCountry"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="7.5dp"
+            android:background="#5676"
+            android:hint="Nhập quê quán"
+            android:inputType="text"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textSize="20sp"
+            android:layout_marginStart="5dp" />
+
+        <EditText
+            android:id="@+id/userEmail"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="39dp"
+            android:background="#5676"
+            android:hint="Nhập email"
+            android:inputType="textEmailAddress"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nơi ở hiện tại:"
+            android:textSize="20sp"
+            android:layout_marginStart="4dp" />
+
+        <EditText
+            android:id="@+id/userPlace"
+            android:layout_width="265dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="7.5dp"
+            android:background="#5676"
+            android:hint="Nhập nơi ở hiện tại"
+            android:inputType="number"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="18dp"
+            android:text="Giới tính"
+            android:textSize="20sp" />
+        <RadioButton
+            android:id="@+id/Male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nam"
+            android:gravity="center"
+            android:textSize="20sp"/>
+        <RadioButton
+            android:id="@+id/Female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nữ"
+            android:gravity="center"
+            android:textSize="20sp"/>
+    </RadioGroup>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="40dp"
+            android:text="NNLT"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:textSize="20sp"/>
+        <CheckBox
+            android:id="@+id/Java"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            android:textSize="20sp"/>
+        <CheckBox
+            android:id="@+id/Python"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Python"
+            android:textSize="20sp"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Ngành học"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/SpCountry"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="#B71C1C"
+        android:text="Click To Submit"
+        android:textColor="#F5FBF6" />
+
+</LinearLayout>
